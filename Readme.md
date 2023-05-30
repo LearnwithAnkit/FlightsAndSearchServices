@@ -4,7 +4,8 @@
 
 - clone the project on your local
 - Execute `npm install` on the same path of your root directory of the downloaded project
-- Create a .env file in root directory and add the following enivironment variables -`Port=3000`
+- Create a .env file in root directory and add the following enivironment variables 
+      - `Port=3000`
 - Inside the `src/config` folder create a new File `config.json` and then add the following piece of json
 ```
 {
@@ -19,15 +20,15 @@
 ```
 
 /
-File Structure:
+File Structure :
 
--src/
-index.js //server
-models/
-controllers/
-middlewares/
-services/
-utils/
-config/
-/repository
--tests/[Later]
+- src/
+   - index.js //server
+   - models/
+   - controllers/
+   - middlewares/
+   - services/
+   - utils/
+   - config/
+   - /repository
+- tests/[Later]
