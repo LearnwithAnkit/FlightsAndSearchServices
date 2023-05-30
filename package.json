@@ -4,7 +4,8 @@
   "description": "Microservice for handling file CRUD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
   },
   "author": "Ankit Anshu",
   "license": "ISC",
