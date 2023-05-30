@@ -1,10 +1,10 @@
-const { CityService } = require("../services");
+const { CityService } = require("../services/index");
 
-const cityService = CityService();
-/*
- *POST
- *data-req.body
- */
+const cityService = new CityService();
+// /*
+//  *POST
+//  *data-req.body
+//  */
 const create = async (req, res) => {
   try {
     const city = cityService.createCity(req.body);
@@ -49,7 +49,7 @@ const destroy = async (req, res) => {
 //PATCH->/city/:id
 const update = async (req, res) => {
   try {
-    const city = cityService.updateeCity(req.params.id, req.body);
+    const city = cityService.updateCity(req.params.id, req.body);
     return res.status(200).json({
       data: city,
       success: true,
