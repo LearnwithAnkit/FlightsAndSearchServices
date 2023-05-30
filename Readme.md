@@ -6,7 +6,7 @@
 -Execute `npm install` on the same path of your root directory of the downloaded project
 -Create a .env file in root directory and add the following enivironment variables -`Port=3000`
 -Inside the `src/config` folder create a new File `config.json` and then add the following piece of json
-'''
+```
 {
 "development": {
 "username": "your db login name",
@@ -16,10 +16,11 @@
 "dialect": "mysql"
 },
 }
-'''
+```
 
 /
-File Structure
+File Structure:
+
 -src/
 index.js //server
 models/
