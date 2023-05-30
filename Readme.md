@@ -20,8 +20,49 @@
 ```
 
 - Once you have added your db config as listed above, go to the src folder from your terminal and execute `npx seuqelize db:create`
-  /
-  File Structure :
+
+## DB Design
+
+      - Airplane Table
+      - Flight
+      - Airport
+      - City
+
+- A flight belongs to an airplane but one airplane can be used in multiple flights.
+- A city has many airports but one airport belong to a city.
+- One airport can have many flights, but a flight belongs to one airport.
+
+## Airplane Table
+
+      - id
+      - model_number
+      - capacity
+      - created_at
+      - updated_at
+
+## Flight Table
+
+      - id
+      - src_airport_id
+      - dest_airport_id
+      - departure_date
+      - arrival date
+      - departure_time
+      - arrival_time
+
+## City Table
+
+      - id
+      - name
+
+## Airport
+
+      - id
+      - name
+      - city_id
+      - address
+
+## File Structure :
 
 - src/
   - index.js //server
